@@ -104,7 +104,7 @@ if (NOT LOTTIE_ASAN)
     if(APPLE)
         target_link_libraries(rlottie
                             PUBLIC
-                                 "-Wl, -undefined error"
+                                 "-Wl"
                               )
     elseif(NOT MSVC)
         target_link_libraries(rlottie
